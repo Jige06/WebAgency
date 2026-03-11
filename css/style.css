@@ -31,11 +31,11 @@ header {
     justify-content: space-around;
 }
 
-a{
+.list a{
     color: #b6b6b6;
 }
 
-a:hover{
+.list a:hover{
     color: cornflowerblue;
     border-top: 5px solid cornflowerblue;
 }
@@ -47,6 +47,7 @@ a:hover{
 h3 {
     color: cornflowerblue;
     text-decoration: underline;
+    margin-bottom: 15px;
 }
 
 h4{
@@ -118,33 +119,48 @@ h4{
     background-color: #b6b6b6;
 }
 
-.services{
+.services, .portfolio{
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.title-services{
+.title-services, .title-projets{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 60%;
+    
+}
+
+.title-services p, .title-projets p{
+    margin-top: 15px;
+}
+
+hr{
+    width:150px;
+}
+
+.fa-circle{
+    color: cornflowerblue;
 }
 
 .double-div{
     display: flex;
+    flex-wrap: wrap;
     width: 90%;
+    margin-top: 10px;
 }
 
 .image-computeur{
-    width: 40%;
+    width: 50%;
 }
 
 .description{
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -159,23 +175,31 @@ h4{
 
 .icon {
     position: relative;
-    height: 6px;
+    height: 60px;
     width: 60px;
 }
 
 .icon i {
     height: 60px;
     width: 60px;
-    color: #b6b6b6;
+    color: cornflowerblue;
 }
 
-.fa-chart-line{
+.fa-chart-line {
     position: absolute;
-    top:25px;
-    left:0;
+    font-size: 30px;
+    top:22px;
+    left:-2px;
 }
 
-.fa-circle{
+.fa-cubes, .fa-chart-pie{
+    position: absolute;
+    font-size: 30px;
+    top:10px;
+    left:-5px;
+}
+
+.dot {
     position: absolute;
     border: 3px solid #b6b6b6;
     border-radius: 50px;
@@ -200,3 +224,81 @@ h4{
 }
 
 
+/* CSS section portfolio */
+
+.button-projets{
+    display: flex;
+    margin-top: 15px;
+
+}
+
+.button-list a{
+    color: black;
+    background-color: grey;
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid grey;
+    padding: 5px;
+    
+}
+
+.button-list a:hover{
+    color: white;
+    display: flex;
+    border: 2px solid cornflowerblue;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    padding: 5px;
+    box-shadow: 2px 2px grey;
+}
+
+.button-list{
+    width: 400px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.images-portfolio{
+    margin-top: 15px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.images-portfolio figure{
+    position: relative;
+    z-index: 0;
+}
+
+.images-portfolio img:hover{
+    position: relative;
+    z-index: -2;
+}
+
+.images-portfolio figcaption{
+    position: absolute;
+    z-index: -1;
+    background-color: #b6b6b6;
+    color: white;
+    width: 240px;
+}
+
+
+
+.figure {
+    
+}
+
+.figure img{
+    margin: 10px;
+    width: 250px;
+    height: auto;
+}
+
+.figure figcaption {
+    top:140px;
+    left: 15px;
+}
