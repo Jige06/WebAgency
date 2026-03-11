@@ -1,0 +1,202 @@
+/* Initialisation de mon navigateur */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+ /* Début du CSS du Header */
+
+header {
+    width: 100%;
+    display: flex;
+    padding: 5px;
+}
+
+.logo{
+    width:45%;
+    display: flex;
+    justify-content: center;
+}
+
+.div-navbar {
+    width: 55%;
+    align-content: center;
+}
+
+.list{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    color: #b6b6b6;
+}
+
+a:hover{
+    color: cornflowerblue;
+    border-top: 5px solid cornflowerblue;
+}
+
+/* fin du CSS Header */
+
+/* Début du CSS du main */
+
+h3 {
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+
+h4{
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+
+.intro{
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-girl img {
+    width: 95%;
+    height: auto;
+}
+
+.image-girl{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow i{
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    border-radius: 60px;
+}
+
+.arrow{
+    position: absolute;
+    z-index: 3;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blue{
+    color: cornflowerblue;
+}
+
+.on-photo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    z-index: 3;
+    width: 50%;
+    color: white;
+    left: 100px;;
+}
+
+.on-photo button{
+    background-color: cornflowerblue;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.on-photo button:hover{
+    background-color: #b6b6b6;
+}
+
+.services{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+}
+
+.double-div{
+    display: flex;
+    width: 90%;
+}
+
+.image-computeur{
+    width: 40%;
+}
+
+.description{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 30px;
+}
+
+.title-description{
+    display: flex;
+    align-items: flex-start;
+    gap:15px;
+}
+
+.icon {
+    position: relative;
+    height: 6px;
+    width: 60px;
+}
+
+.icon i {
+    height: 60px;
+    width: 60px;
+    color: #b6b6b6;
+}
+
+.fa-chart-line{
+    position: absolute;
+    top:25px;
+    left:0;
+}
+
+.fa-circle{
+    position: absolute;
+    border: 3px solid #b6b6b6;
+    border-radius: 50px;
+    top:-7px;
+    left: -21px;
+    animation: rotation linear 4s infinite;
+}
+
+@keyframes rotation {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
+    }
+}
+
+.text-description{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+
