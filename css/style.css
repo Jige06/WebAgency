@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -100,33 +101,42 @@ h4{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     position: absolute;
     z-index: 3;
     width: 50%;
     color: white;
-    left: 100px;;
+    left: 100px;
 }
 
+.big-text {
+    display: flex;
+}
+
+.small-text {
+    display: flex;
+    
+}
 .on-photo button{
     background-color: cornflowerblue;
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
+    width: 10%;
 }
 
 .on-photo button:hover{
     background-color: #b6b6b6;
 }
 
-.services, .portfolio{
+.services, .portfolio, .contacts{
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.title-services, .title-projets{
+.title-services, .title-projets, .title-contacts{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -151,6 +161,7 @@ hr{
 .double-div{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 90%;
     margin-top: 10px;
 }
@@ -261,16 +272,23 @@ hr{
 }
 
 .images-portfolio{
-    margin-top: 15px;
+    margin: 15px auto;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .images-portfolio figure{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
     position: relative;
     z-index: 0;
+}
+
+.images-portfolio img {
+    width: 100%;
+    height: auto;
 }
 
 .images-portfolio img:hover{
@@ -283,22 +301,93 @@ hr{
     z-index: -1;
     background-color: #b6b6b6;
     color: white;
-    width: 240px;
 }
 
-
-
 .figure {
+    
     
 }
 
 .figure img{
-    margin: 10px;
-    width: 250px;
-    height: auto;
+   
 }
 
 .figure figcaption {
     top:140px;
     left: 15px;
+}
+ /* Debut CSS partie contact */
+
+.contacts{
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maps {
+    width: 90%;
+}
+
+iframe {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    z-index: 10;
+    opacity: 0.65;
+}
+
+.filter-blue{
+    z-index: 1;
+    position: absolute;
+    bottom: 50px;
+    width: 90%;
+    height: 800px;
+    background-color: lightskyblue;
+}
+
+form{
+    z-index: 20;
+    border: black solid 2px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    padding: 10px;
+}
+
+.form-contact{
+    position: absolute;
+    left: 65%;
+    bottom: 360px;
+    opacity: 0.8;
+}
+
+h6 {
+    font-size: 1.5rem;
+}
+
+.form-contact button{
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    box-shadow: #b6b6b6 2px 2px;
+    color: white;
+    margin-top: 2%;
+    width: 50%;
+    height: 35px;
+    font-weight: bold;
+}
+
+.form-contact button:hover{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: #b6b6b6 3px 3px;
+    color: cornflowerblue;
+    margin-top: 2%;
+    width: 50%;
+    height: 35px;
+    font-weight: bold;
 }
